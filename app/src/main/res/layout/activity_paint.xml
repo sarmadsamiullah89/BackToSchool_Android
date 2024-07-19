@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PaintActivity">
+
+    <LinearLayout
+        android:id="@+id/toolsHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#F8E6DC"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:weightSum="5">
+
+        <ImageButton
+            android:id="@+id/pBtnSave"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/save" />
+
+        <ImageButton
+            android:id="@+id/pBtnColor"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/colorcircle" />
+
+        <ImageButton
+            android:id="@+id/pBtnErazer"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/eraser" />
+
+        <ImageButton
+            android:id="@+id/pBtnSize"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/brushsize" />
+
+        <TextView
+            android:id="@+id/pTextSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="4dp"
+            android:text="5dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/pText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center_horizontal"
+            android:padding="4dp"
+            android:layout_weight="1"
+            android:text="@string/note"
+            android:textSize="6sp" />
+    </LinearLayout>
+
+    <com.kyanogen.signatureview.SignatureView xmlns:sign="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/signature_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/toolsHolder"
+        android:layout_toStartOf="@+id/toolsHolder2"
+        sign:backgroundColor="#ffffff"
+        sign:enableSignature="true"
+        sign:penColor="#000000"
+        sign:penSize="5dp" />
+
+    <SeekBar
+        android:visibility="gone"
+        android:id="@+id/pSeekbarSize"
+        android:layout_width="250dp"
+        android:layout_height="240dp"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@id/toolsHolder"
+        android:progress="5"
+        android:progressTint="@color/orange"
+        android:rotation="270"
+        android:thumbTint="@color/orangeDark" />
+
+    <ScrollView
+        android:id="@+id/toolsHolder2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F8E6DC"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:weightSum="6">
+
+            <ImageButton
+                android:id="@+id/pBtnBrown"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/colorbg"
+                android:backgroundTint="#660000" />
+
+            <ImageButton
+                android:id="@+id/pBtnRed"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/colorbg"
+                android:backgroundTint="#FF0000" />
+
+            <ImageButton
+                android:id="@+id/pBtnOrange"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/colorbg"
+                android:backgroundTint="#FF6600" />
+
+            <ImageButton
+                android:id="@+id/pBtnYellow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/colorbg"
+                android:backgroundTint="#FFDD00" />
+
+            <ImageButton
+                android:id="@+id/pBtnGreen"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/colorbg"
+                android:backgroundTint="#009900" />
+
+            <ImageButton
+                android:id="@+id/pBtnSkyBlue"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/colorbg"
+                android:backgroundTint="#009999" />
+
+            <ImageButton
+                android:id="@+id/pBtnBlue"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/colorbg"
+                android:backgroundTint="#0000FF" />
+
+            <ImageButton
+                android:id="@+id/pBtnPurple"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/colorbg"
+                android:backgroundTint="#990099" />
+
+            <ImageButton
+                android:id="@+id/pBtnWhite"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:src="@drawable/colorbg" />
+
+            <ImageButton
+                android:id="@+id/pBtnBlack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/colorbg"
+                android:backgroundTint="#000000" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

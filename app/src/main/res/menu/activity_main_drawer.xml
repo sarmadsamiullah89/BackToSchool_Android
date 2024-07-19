@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_alphabets"
+            android:icon="@drawable/alphabets"
+            android:title="Alphabets" />
+        <item
+            android:id="@+id/nav_colors"
+            android:icon="@drawable/colors"
+            android:title="Colors" />
+        <item
+            android:id="@+id/nav_numbers"
+            android:icon="@drawable/numbers"
+            android:title="Numbers" />
+        <item
+            android:id="@+id/nav_shapes"
+            android:icon="@drawable/shapes"
+            android:iconTint="@android:color/transparent"
+            android:title="Shapes" />
+        <item
+            android:id="@+id/nav_days"
+            android:icon="@drawable/days"
+            android:title="Days" />
+        <item
+            android:id="@+id/nav_fruits"
+            android:icon="@drawable/fruits"
+            android:title="Fruits" />
+        <item
+            android:id="@+id/nav_animals"
+            android:icon="@drawable/animals"
+            android:title="Animals" />
+    </group>
+    <item android:title="Information">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/information"
+                android:title="About" />
+        </menu>
+    </item>
+</menu>

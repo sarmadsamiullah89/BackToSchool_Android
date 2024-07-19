@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/orangeLight"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    tools:context=".fragments.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/alphabetsC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:padding="5dp"
+                        android:src="@drawable/alphabets" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/comicy_x3vdr"
+                        android:letterSpacing=".1"
+                        android:padding="5dp"
+                        android:text="Alphabets"
+                        android:textColor="@color/purple_200"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/colorsC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:padding="5dp"
+                        android:src="@drawable/colors" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/comicy_x3vdr"
+                        android:letterSpacing=".1"
+                        android:padding="5dp"
+                        android:text="Colors"
+                        android:textColor="@color/purple_200"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/numbersC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:padding="5dp"
+                        android:src="@drawable/numbers" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/comicy_x3vdr"
+                        android:letterSpacing=".1"
+                        android:padding="5dp"
+                        android:text="Numbers"
+                        android:textColor="@color/purple_200"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/shapesC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:padding="5dp"
+                        android:src="@drawable/shapes" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/comicy_x3vdr"
+                        android:letterSpacing=".1"
+                        android:padding="5dp"
+                        android:text="Shapes"
+                        android:textColor="@color/purple_200"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/daysC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:padding="5dp"
+                        android:src="@drawable/days" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/comicy_x3vdr"
+                        android:letterSpacing=".1"
+                        android:padding="5dp"
+                        android:text="Days"
+                        android:textColor="@color/purple_200"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fruitsC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:padding="5dp"
+                        android:src="@drawable/fruits" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/comicy_x3vdr"
+                        android:letterSpacing=".1"
+                        android:padding="5dp"
+                        android:text="Fruits"
+                        android:textColor="@color/purple_200"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/animalsC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:padding="5dp"
+                        android:src="@drawable/animals" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/comicy_x3vdr"
+                        android:letterSpacing=".1"
+                        android:padding="5dp"
+                        android:text="Animals"
+                        android:textColor="@color/purple_200"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/paintC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:padding="5dp"
+                        android:src="@drawable/paint" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/comicy_x3vdr"
+                        android:letterSpacing=".1"
+                        android:padding="5dp"
+                        android:text="Paint"
+                        android:textColor="@color/purple_200"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

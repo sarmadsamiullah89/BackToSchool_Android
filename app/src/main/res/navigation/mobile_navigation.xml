@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.sahilssoft.backtoschool.fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_alphabets"
+        android:name="com.sahilssoft.backtoschool.fragments.AlphabetsFragment"
+        android:label="Alphabets"
+        tools:layout="@layout/fragment_alphabets" />
+    <fragment
+        android:id="@+id/nav_colors"
+        android:name="com.sahilssoft.backtoschool.fragments.ColorsFragment"
+        android:label="Colors"
+        tools:layout="@layout/fragment_colors" />
+    <fragment
+        android:id="@+id/nav_numbers"
+        android:name="com.sahilssoft.backtoschool.fragments.NumbersFragment"
+        android:label="Numbers"
+        tools:layout="@layout/fragment_numbers" />
+    <fragment
+        android:id="@+id/nav_shapes"
+        android:name="com.sahilssoft.backtoschool.fragments.ShapesFragment"
+        android:label="Shapes"
+        tools:layout="@layout/fragment_shapes" />
+    <fragment
+        android:id="@+id/nav_days"
+        android:name="com.sahilssoft.backtoschool.fragments.DaysFragment"
+        android:label="Days"
+        tools:layout="@layout/fragment_days" />
+    <fragment
+        android:id="@+id/nav_fruits"
+        android:name="com.sahilssoft.backtoschool.fragments.FruitsFragment"
+        android:label="Fruits"
+        tools:layout="@layout/fragment_fruits" />
+    <fragment
+        android:id="@+id/nav_animals"
+        android:name="com.sahilssoft.backtoschool.fragments.AnimalsFragment"
+        android:label="Animals"
+        tools:layout="@layout/fragment_animals" />
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.sahilssoft.backtoschool.fragments.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+
+</navigation>
